@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<!-- <a href="#" class="navbar-brand">Reminders</a> -->
+			<%= link_to 'Reminders', events_path, :class => "navbar-brand"  %>
+			</div>
+		</div>
 
-<%= yield %>
+	<div class="container">
+		<%= yield %>
+	</div>
 
 </body>
 </html>
